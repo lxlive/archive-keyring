@@ -1,0 +1,5 @@
+pkg-lxqt-keyring (2016.02.27) lxqt-snapshots; urgency=medium
+
+  * new keyring for pkg-lxqt snapshot archive
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 27 Feb 2016 13:53:36 +0100

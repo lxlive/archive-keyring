@@ -1,0 +1,21 @@
+Source: pkg-lxqt-keyring
+Section: misc
+Priority: extra
+Maintainer: Alf Gaida <agaida@siduction.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: gnupg
+Standards-Version: 3.9.7
+Vcs-Browser: https://.debian.org/cgit/pkg-lxqt/pkg-lxqt-keyring
+Vcs-Git:     https://.debian.org/cgit/pkg-lxqt/pkg-lxqt-keyring.git
+
+Package: pkg-lxqt-archive-keyring
+Architecture: all
+Depends: ${misc:Depends},
+ debian-archive-keyring
+Suggests: gnupg2 | gnupg
+Description: GnuPG archive keys of the lxqt-snapshots archive
+ The archive project digitally signs its release files. This package contains
+ the archive keys used for that and can be used to support signature 
+ verification ("apt-secure") for:
+  - Release signature verification for pkg-lxqt (Release.gpg)
+  - Packages, Sources md5sum verification against Release
